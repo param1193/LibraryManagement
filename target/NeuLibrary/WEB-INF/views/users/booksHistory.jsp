@@ -3,11 +3,11 @@
 
 <sec:authorize access="hasAuthority('USER')">
 	<div class="jumbotron">
-		<h1 class="text-center">Job History</h1>
+		<h1 class="text-center">Book History</h1>
 	</div>
 	<c:choose>
 		<c:when test="${isEmpty}">
-			<h3 class="text-center">No Jobs Applied yet!</h3>
+			<h3 class="text-center">No Books Loaned yet!</h3>
 		</c:when>
 		<c:otherwise>
 			<table class="table">
@@ -28,14 +28,14 @@
 							<c:choose>
 								<c:when test="${bookHistory.isReturned=='0'}">
 									<td><a
-										href="/MyLibrary/books/${currentUserID}/${bookHistory.id}/return"
+										href="/NeuLibrary/books/${currentUserID}/${bookHistory.id}/return"
 										class="btn btn-default" role="button"> <span
 											class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
 											Return
 									</a></td>
 								</c:when>
 								<c:otherwise>
-									<td>Applied</td>
+									<td>Loaned</td>
 								</c:otherwise>
 							</c:choose>
 						</tr>

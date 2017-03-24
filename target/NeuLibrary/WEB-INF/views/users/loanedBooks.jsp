@@ -3,11 +3,11 @@
 
 <sec:authorize access="hasAuthority('ADMIN')">
 	<div class="jumbotron">
-		<h1 class="text-center">Applied Jobs by Users</h1>
+		<h1 class="text-center">Loaned books by Users</h1>
 	</div>
 	<c:choose>
 		<c:when test="${isEmpty}">
-			<h3 class="text-center">There are no jobs applied!</h3>
+			<h3 class="text-center">There are no books loaned!</h3>
 		</c:when>
 		<c:otherwise>
 			<table class="table">

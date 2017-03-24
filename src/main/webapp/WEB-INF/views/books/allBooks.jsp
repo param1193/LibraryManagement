@@ -21,7 +21,7 @@
 				<h3 class="text-center">The list is empty!</h3>
 			</c:when>
 			<c:when test="${noSuchBookFound}">
-				<h3 class="text-center">No such job was found!</h3>
+				<h3 class="text-center">No such book was found!</h3>
 			</c:when>
 			<c:otherwise>
 		<div class="row">
